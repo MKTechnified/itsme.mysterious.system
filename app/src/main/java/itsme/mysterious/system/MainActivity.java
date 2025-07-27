@@ -3,7 +3,6 @@ package itsme.mysterious.system;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.util.Log;
 
 import androidx.activity.ComponentActivity;
 import androidx.activity.EdgeToEdge;

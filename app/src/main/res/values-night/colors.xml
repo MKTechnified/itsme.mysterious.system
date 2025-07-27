@@ -5,4 +5,6 @@
     <color name="foreground">@color/white</color>
     <color name="background">@color/black</color>
 
+    <color name="primaryText">#FFFFFF</color>
+    <color name="secondaryText">#888888</color>
 </resources>
