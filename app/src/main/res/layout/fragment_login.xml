@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_container"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_24sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_24sdp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Welcome Back!"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_24ssp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
+        app:layout_constraintStart_toStartOf="@id/guideline_start" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Login to continue"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/input_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="et_email, et_password, btn_login" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/bg_input_field"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#8A8A8E"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/bg_input_field"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/_16sdp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#8A8A8E"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:background="@drawable/bg_input_field"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="tv_title, tv_subtitle, et_email, et_password, btn_login"
+        app:flow_verticalGap="@dimen/_16sdp"
+        app:flow_verticalStyle="packed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
