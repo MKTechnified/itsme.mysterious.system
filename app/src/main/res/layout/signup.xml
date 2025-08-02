@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingVertical="@dimen/_24sdp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/_24sdp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/_24sdp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Hello!"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/tv_playerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:textSize="@dimen/_24ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColorHint="#8A8A8E"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tv_playerName" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38sdp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#8A8A8E"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#8A8A8E"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+        <EditText
+            android:id="@+id/et_confirm_password"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#8A8A8E"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+        <EditText
+            android:id="@+id/et_pin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:background="@drawable/bg_input_field"
+            android:hint="PIN"
+            android:inputType="numberPassword"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#8A8A8E"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toStartOf="@id/et_confirm_pin"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/et_confirm_password" />
+
+        <EditText
+            android:id="@+id/et_confirm_pin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Confirm PIN"
+            android:inputType="numberPassword"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:textColorHint="#8A8A8E"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toEndOf="@id/et_pin"
+            app:layout_constraintTop_toBottomOf="@id/et_confirm_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/bg_input_field"
+            android:text="SIGN UP"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/et_confirm_pin" />
+
+        <TextView
+            android:id="@+id/tv_already_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:text="Already a member? "
+            android:textColor="#8A8A8E"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toStartOf="@id/tv_login"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/btn_signup" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_already_member"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toEndOf="@id/tv_already_member" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

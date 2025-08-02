@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">It\'sME</string>
+
+    <string name="create_new_account">Create New Account</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_pin">PIN</string>
+    <string name="hint_confirm_pin">Confirm PIN</string>
+    <string name="button_sign_up">SIGN UP</string>
+    <string name="already_member_login">Already a member? Login</string>
 </resources>

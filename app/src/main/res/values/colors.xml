@@ -43,4 +43,7 @@
     <color name="bright_white">#D3E3EF</color>
     <color name="border">#172A3B</color>
 
+    <color name="grey_dark">#333333</color>
+    <color name="grey_light">#AAAAAA</color>
+
 </resources>

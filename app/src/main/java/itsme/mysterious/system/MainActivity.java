@@ -26,7 +26,7 @@ public class MainActivity extends ComponentActivity {
 
         //Set Layout Settings
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.signup);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -36,6 +36,6 @@ public class MainActivity extends ComponentActivity {
         // Delay for 10 seconds before proceeding
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             isSplashDone = true;
-        }, 10000); // 10000 ms = 10 sec
+        }, 2000); // 10000 ms = 10 sec
     }
 }
