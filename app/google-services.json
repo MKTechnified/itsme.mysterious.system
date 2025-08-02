@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "144522747550",
+    "project_id": "mysteriouselevation-21me",
+    "storage_bucket": "mysteriouselevation-21me.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144522747550:android:e32de84e7b919d0585a58f",
+        "android_client_info": {
+          "package_name": "itsme.mysterious.system"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCITVFkzvHbNqEeBBPwrqqb3L0VAINALw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
